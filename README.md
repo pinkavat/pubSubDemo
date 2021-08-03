@@ -14,4 +14,10 @@ The buffer is emptied by multiple threads. When each **event** is thus processed
 
 ## Demo code particulars
 
-The demo code is a standalone test that runs a handful of arbitrary subscribers. Upon execution, the user publishes several event(s) by providing a string to stdin. Each character in the string (in the range a-f) adds a particular event to the bus. Some events do nothing; others produce further events; others demonstrate "event data" which is associated with a specific event. See the file for details.
+The demo code is a standalone test that runs a handful of arbitrary subscribers.
+
+Upon execution, the user publishes several event(s) by providing a string to ```stdin```.
+
+Each character in the string (in the range a-f) adds a particular event to the bus.
+
+Some events do nothing; others produce further events; others demonstrate "event data" which is associated with a specific event. See the file for details.

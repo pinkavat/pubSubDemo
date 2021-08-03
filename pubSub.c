@@ -5,7 +5,8 @@
 /* pubSub.c
  *  
  * tester code for a publish/subscription event queue with multithreading
- * extension of code in grabBag.c, which tests multithreaded event queues
+ *
+ * written November 2019 (?) by Thomas Pinkava
  */
 
 #define THREAD_COUNT 4  // The number of execution threads to employ
