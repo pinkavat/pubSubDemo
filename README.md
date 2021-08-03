@@ -10,7 +10,7 @@ At the beginning of execution (or at any time), **subscribers** inform the pub-s
 
 During runtime, **events** are produced by other parts of the program, and **published**; i.e. added to the pub/sub buffer.
 
-The buffer is emptied by multiple threads. When each **event** is processed, **subscribers** that subscribe to that event are given the **event**, along with its instance-specific data. These **subscribers** generally take the form of a function that is run on the **event**. Such a function could produce further **events**, which could be handled by other **subscribers**.
+The buffer is emptied by multiple threads. When each **event** is thus processed, **subscribers** that subscribe to that event are given the **event**, along with its instance-specific data. These **subscribers** generally take the form of a function that is run on the **event**. Such a function could **publish** further **events**, which could be handled by other **subscribers**.
 
 ## Demo code particulars
 
